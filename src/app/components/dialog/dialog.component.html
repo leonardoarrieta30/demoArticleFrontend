@@ -1,0 +1,24 @@
+<div class="updateForm">
+  <h1 class="mat-h1">Update Article: {{ data.article.name }}</h1>
+  <form (ngSubmit)="onSubmit()" class="mat-elevation-z2">
+
+    <div class="updateFormStructure">
+      <mat-form-field class="form-group">
+        <input matInput type="text" name="name" placeholder="Name" [(ngModel)]="data.article.name" required>
+      </mat-form-field>
+
+      <mat-form-field class="form-group">
+        <textarea matInput name="description" placeholder="Description" [(ngModel)]="data.article.description"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="form-group">
+        <input matInput type="text" name="photo" placeholder="URL Image(png o jpg)" [(ngModel)]="data.article.photo" required>
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" color="primary" (click)="closeDialog()">Update</button>
+
+    </div>
+
+  </form>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <h1><b>Ingrese nuevos datos de una categoria</b></h1>
+  <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" formControlName="name" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Descripción</label>
+      <textarea id="description" formControlName="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="image">Imagen</label>
+      <input type="text" id="image" formControlName="image">
+    </div>
+    <button type="submit" style="background-color: #4CAF50">Agregar Categoría</button>
+  </form>
+
+</div>
+

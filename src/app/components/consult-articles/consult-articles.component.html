@@ -1,0 +1,45 @@
+<div class="articlesPage">
+  <div class="filtered">
+    <div class="filterByCategory">
+      <mat-form-field class="example-user-input">
+        <mat-label class="input-label">Filtrar por categoría</mat-label>
+        <mat-select  placeholder = "Tecnologia"  [formControl]="position" (selectionChange)="onCategorySelectionChange($event)">
+          <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
+            {{positionOption}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <button mat-button class="mat-elevation-z24" (click)="openCreateArticleDialog()">Create Article</button>
+    <div class="filterByName">
+      <mat-form-field appearance="outline" class="example-user-input">
+        <mat-label class="input-label">Filtrar por nombre</mat-label>
+        <input matInput #inputSearch placeholder="Computadora" autofocus type="text" (keyup)="getArticlesByName(inputSearch.value)">
+        <mat-icon color="primary" matSuffix class="search-icon" (click)="getArticlesByName(inputSearch.value)">search</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+
+
+  <div class="articles">
+    <div *ngFor="let item of articles" class="article">
+      <a (click)="viewDetails(item.id)" class="article-link">
+        <div class="article-card">
+          <h1 class="article-code">Code: {{item.code}}</h1>
+          <h2 class="article-name">Name: {{item.name}}</h2>
+          <p class="article-price">Price: S/{{item.price}}</p>
+          <p class="article-stock">Stock: {{item.stock}}</p>
+
+        </div>
+      </a>
+      <div class="delete-item">
+        <button mat-button (click)="deleteArticle(item.id)">
+          <mat-icon style="color: red">
+            delete_sweep
+          </mat-icon>
+          Delete {{item.name}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

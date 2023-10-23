@@ -1,0 +1,9 @@
+<p>
+  <mat-toolbar style="background-color: #4CAF50">
+    <span><a href="http://localhost:4200/">Mantenimiento de Articulos</a></span>
+    <span class="example-spacer"></span>
+
+    <a mat-button *ngFor="let option of options"
+       [routerLink]="option.path">{{ option.title }}</a>
+  </mat-toolbar>
+</p>

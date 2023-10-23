@@ -1,0 +1,33 @@
+.create-article-dialog {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.create-article-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.half-width {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  margin-left: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

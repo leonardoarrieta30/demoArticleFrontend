@@ -1,0 +1,47 @@
+<div class="centered-container">
+  <div class="articleDetails">
+    <div class="article">
+      <h1 class="article-title"> Article: {{article.name}}</h1>
+      <img [src]="article.photo" alt="Descripción de la imagen" class="image">
+    </div>
+
+
+    <div class="info-container">
+      <div class="info-item">
+        <span class="info-label"> Code: </span>
+        <span class="info-value">{{article.code}}</span>
+      </div>
+
+      <div class="info-item">
+        <span class="info-label"> Category: </span>
+        <span class="info-value">{{article.category.name}}</span>
+      </div>
+
+      <div class="info-item">
+        <span class="info-label"> Description: </span>
+        <span class="info-value">{{article.description}}</span>
+      </div>
+
+      <div class="info-item">
+        <span class="info-label"> Price: </span>
+        <span class="info-value">S/{{article.price}}</span>
+      </div>
+
+      <div class="info-item">
+        <span class="info-label"> Stock: </span>
+        <span class="info-value">{{article.stock}}</span>
+      </div>
+
+      <div class="update-article">
+        <button mat-button (click)="openDialog(article.id, article)">
+          <mat-icon style="color: blue">
+            create
+          </mat-icon>
+          Update {{article.name}}
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

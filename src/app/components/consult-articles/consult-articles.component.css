@@ -1,0 +1,71 @@
+.articlesPage{
+  margin: 20px;
+}
+.filtered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.filterByCategory,
+.filterByName {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+
+
+.input-label {
+  font-weight: bold;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.articles a{
+  cursor: pointer;
+}
+
+.article {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+
+.article-link {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.article-card {
+  background-color: #c47a51;
+  border: 3px solid rgba(14, 13, 13, 0.71);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.article-code {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.article-name {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.article-price,
+.article-stock {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+

@@ -1,0 +1,33 @@
+.welcome-message {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: left;
+}
+
+.astronaut-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 500px; /* Ajusta el tamaño del contenedor según tus necesidades */
+  margin: 0 auto;
+  animation: moveAstronaut 5s linear infinite; /* Aplica la animación continua */
+}
+
+.astronaut {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes moveAstronaut {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
