@@ -10,6 +10,6 @@ export class ConsultArticlesService extends BaseService<Article>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:8080/api/v1/articles';
+    this.basePath = 'https://demoarticle-production.up.railway.app/api/v1/articles';
   }
 }

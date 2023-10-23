@@ -8,7 +8,7 @@ import {catchError, observable, Observable, retry, throwError} from "rxjs";
 })
 export class BaseService<T> {
   //Resource endpoint
-  basePath = 'http://localhost:8080/api/v1/resources';
+  basePath = 'https://demoarticle-production.up.railway.app/api/v1/resources';
 
   httpOptions = {
     headers: new HttpHeaders({
